@@ -10,9 +10,9 @@ const Navbar = () => {
     }
 
     return (
-        <div className='flex items-center h-20 max-w-[1240px] mx-auto px-4 text-white'>
-            <img src='splash-logo.png' alt='Splash Logo' className='w-10 mr-4 rounded-md cursor-pointer' />
-            <h1 className='w-full text-2xl font-bold cursor-pointer text-white'>Splash</h1>
+        <div className='flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 text-white'>
+            <img src='splash-logo.png' alt='Splash Logo' className='w-10 mr-4 rounded-md cursor-pointer transition ease-in hover:opacity-20' />
+            <h1 className='w-full text-2xl font-bold cursor-pointer text-white hidden md:flex'>Splash</h1>
             <ul className='cursor-pointer items-center font-semibold hidden md:flex'>
                 <li className='p-4 hover:text-gray-400'>Explore</li>
                 <li className='p-4 hover:text-gray-400'>Company</li>
