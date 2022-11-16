@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import Hero from './components/Hero';
 import MiddleNav from './components/MiddleNav';
-import Navbar from './components/Navbar'
-import ImageGrid from './components/ImageGrid';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import Videos from './pages/Videos';
+import Challenges from './pages/Challenges';
+import Leaderboard from './pages/Leaderboard';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
-  {/**have local state here and send a prop function to Hero which communicates the input value
-    then send that value to Image Grid as a prop */}
-
   const [searchTerm, setSearchTerm] = useState('');
 
   return (
@@ -18,7 +19,13 @@ function App() {
       </div>
     
       <MiddleNav />
-      <ImageGrid searchTerm={searchTerm}/>
+      <Routes>
+        <Route path='/' element={<Home searchTerm={searchTerm}/>} />
+        <Route path='/videos' element={<Videos/>} />
+        <Route path='/leaderboard' element={<Leaderboard/>} />
+        <Route path='/challenges' element={<Challenges/>} />
+      </Routes>
+      
     </div>
   );
 }
