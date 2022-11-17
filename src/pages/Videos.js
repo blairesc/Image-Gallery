@@ -1,8 +1,9 @@
 import React from 'react'
+import VideoGrid from '../components/VideoGrid';
 
-const Videos = () => {
+const Videos = ({ searchTerm }) => {
   return (
-    <div>Videos</div>
+    <VideoGrid searchTerm={searchTerm} />
   )
 }
 

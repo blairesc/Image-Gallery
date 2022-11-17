@@ -20,8 +20,8 @@ function App() {
     
       <MiddleNav />
       <Routes>
-        <Route path='/' element={<Home searchTerm={searchTerm}/>} />
-        <Route path='/videos' element={<Videos/>} />
+        <Route path='/' element={<Home searchTerm={searchTerm} />} />
+        <Route path='/videos' element={<Videos searchTerm={searchTerm} />} />
         <Route path='/leaderboard' element={<Leaderboard/>} />
         <Route path='/challenges' element={<Challenges/>} />
       </Routes>
