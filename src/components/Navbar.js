@@ -19,7 +19,7 @@ const Navbar = () => {
                 <li className='p-4 hover:text-gray-400'>Product</li>
             </ul>
             <div className='flex justify-between items-center'>
-                <button className='bg-white text-black items-center py-2 px-5 rounded-md font-semibold transition ease-in hover:bg-[#07a081] hover:text-white'> Join </button>
+                <button className='bg-white text-black items-center py-2 px-5 rounded-md font-semibold transition ease-in hover:bg-[#07a081] hover:text-white'> Upload </button>
                 <div onClick={handleNav} className='block md:hidden'>
                     <AiOutlineMenu className='text-white ml-2 text-xl cursor-pointer'/>
                 </div>
