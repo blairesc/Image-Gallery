@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Videos from './pages/Videos';
 import Challenges from './pages/Challenges';
-import Leaderboard from './pages/Leaderboard';
 import { Route, Routes } from 'react-router-dom';
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
       <Routes>
         <Route path='/' element={<Home searchTerm={searchTerm} />} />
         <Route path='/videos' element={<Videos searchTerm={searchTerm} />} />
-        <Route path='/leaderboard' element={<Leaderboard/>} />
         <Route path='/challenges' element={<Challenges/>} />
       </Routes>
       
