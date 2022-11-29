@@ -12,9 +12,6 @@ const MiddleNav = () => {
               <NavLink to="/videos" className={({ isActive }) => (isActive ? 'bg-black py-2 px-4 rounded-full text-white transition ease-in hover:bg-opacity-75' : undefined )}>Videos</NavLink>
             </li>
             <li className='mr-6 hover:text-black'> 
-              <NavLink to="/leaderboard" className={({ isActive }) => (isActive ? 'bg-black py-2 px-4 rounded-full text-white transition ease-in hover:bg-opacity-75' : undefined )}>Leaderboard</NavLink>
-            </li>
-            <li className='mr-6 hover:text-black'> 
               <NavLink to="/challenges" className={({ isActive }) => (isActive ? 'bg-black py-2 px-4 rounded-full text-white transition ease-in hover:bg-opacity-75' : undefined )}>Challenges</NavLink>
             </li>
         </ul>
