@@ -4,7 +4,7 @@ const ChallengeCardImages = () => {
   return (
     <div>
 
-        <div className='w-[535px] h-[401px] grid grid-cols-2 gap-2 cursor-pointer group'>
+        <div className='w-[360px] md:w-[535px] md:h-[401px] grid grid-cols-2 gap-2 cursor-pointer group'>
             <div className='relative'>
                 <img className='h-full object-cover rounded-l-3xl' src='https://images.pexels.com/photos/3089988/pexels-photo-3089988.jpeg?auto=compress&cs=tinysrgb&h=400&w=280&fit=crop&crop=focalpoint&dpr=2' alt='' />
                 <div className="absolute inset-0 bg-black opacity-0 rounded-l-3xl duration-500 group-hover:opacity-30"></div>

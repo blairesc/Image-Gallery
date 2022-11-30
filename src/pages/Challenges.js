@@ -6,7 +6,6 @@ const Challenges = () => {
   return (
     <div>
       <h1 className='text-center text-4xl text-gray-800 font-semibold py-4 mb-8'>Challenges</h1>
-      
       <ChallengeCard />
       <ChallengeCard />
 
