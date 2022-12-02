@@ -1,6 +1,7 @@
-import React from 'react'
-import ChallengeCard from '../components/ChallengeCard'
-import PastChallengeCard from '../components/PastChallengeCard'
+import React from 'react';
+import ChallengeCard from '../components/ChallengeCard';
+import Footer from '../components/Footer';
+import PastChallengeCard from '../components/PastChallengeCard';
 
 const Challenges = () => {
   const challengeProp = {
@@ -46,8 +47,10 @@ const Challenges = () => {
         <PastChallengeCard {...pastChallengeProp1} />
         <PastChallengeCard {...pastChallengeProp2} />
       </div>
+
+      <Footer bgColor='bg-black' textColor='text-white' />
     </div>
   )
 }
 
-export default Challenges
+export default Challenges;
