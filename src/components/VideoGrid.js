@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from 'react'
-import VideoCard from './VideoCard'
+import React, { useState, useEffect } from 'react';
+import VideoCard from './VideoCard';
 
 const VideoGrid = ({ searchTerm }) => {
     const [videos, setVideos] = useState([]);
     const [isLoading, setIsLoading] = useState(true);
     
     useEffect(() => {
-        fetch(`https://pixabay.com/api/videos/?key=${process.env.REACT_APP_PIXABAY_KEY}&q=${searchTerm}&pretty=true`)
+        fetch(`https://pixabay.com/api/videos/?key=${process.env.REACT_APP_PIXABAY_KEY}&q=${searchTerm}&pretty=true&per_page=121`)
             .then(res => res.json())
             .then(data => {
                 setVideos(data.hits);
@@ -24,7 +24,7 @@ const VideoGrid = ({ searchTerm }) => {
 
         {isLoading ? 
             <h1 className='mx-auto text-6xl text-center'>Loading...</h1> : 
-            <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
+            <div className='grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4'>
                 {videos.map(video => (
                     <VideoCard key={video.id} video={video}/>
                 ))}
@@ -34,4 +34,4 @@ const VideoGrid = ({ searchTerm }) => {
     )
 }
 
-export default VideoGrid
+export default VideoGrid;
