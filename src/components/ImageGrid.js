@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react'
-import ImageCard from './ImageCard'
+import React, { useState, useEffect } from 'react';
+import ImageCard from './ImageCard';
 
 
 const ImageGrid = ({ searchTerm }) => {
@@ -7,7 +7,7 @@ const ImageGrid = ({ searchTerm }) => {
     const [isLoading, setIsLoading] = useState(true);
     
     useEffect(() => {
-        fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_KEY}&q=${searchTerm}&image_type=photo&pretty=true`)
+        fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_KEY}&q=${searchTerm}&image_type=photo&pretty=true&per_page=100`)
             .then(res => res.json())
             .then(data => {
                 setImages(data.hits);
@@ -25,7 +25,7 @@ const ImageGrid = ({ searchTerm }) => {
 
         {isLoading ? 
             <h1 className='mx-auto text-6xl text-center'>Loading...</h1> : 
-            <div className='grid grid-cols-2 md:grid-cols-3 gap-4'>
+            <div className='grid grid-cols-2 lg:grid-cols-3 gap-4'>
                 {images.map(image => (
                     <ImageCard key={image.id} image={image}/>
                 ))}
@@ -35,4 +35,4 @@ const ImageGrid = ({ searchTerm }) => {
     )
 }
 
-export default ImageGrid
+export default ImageGrid;

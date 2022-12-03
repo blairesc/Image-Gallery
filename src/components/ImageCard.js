@@ -1,7 +1,7 @@
-import React from 'react'
-import {BiHeart} from 'react-icons/bi'
-import {BiBookmarks} from 'react-icons/bi'
-import {TbDownload} from 'react-icons/tb'
+import React from 'react';
+import {BiHeart} from 'react-icons/bi';
+import {BiBookmarks} from 'react-icons/bi';
+import {TbDownload} from 'react-icons/tb';
 
 const ImageCard = ({ image }) => {
   return (
@@ -25,4 +25,4 @@ const ImageCard = ({ image }) => {
   )
 }
 
-export default ImageCard
+export default ImageCard;
