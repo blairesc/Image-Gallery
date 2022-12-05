@@ -7,7 +7,7 @@ const Challenges = () => {
   const challengeProp = {
     title: 'Homepage Challenge: Red',
     text: 'Submit your best photos and videos featuring the color red!',
-    numOfImages: '700',
+    numOfImages: '708',
     images: {
       img1: 'http://images.pexels.com/photos/3444345/pexels-photo-3444345.png?auto=compress&cs=tinysrgb&w=600',
       img2: 'http://images.pexels.com/photos/3694706/pexels-photo-3694706.jpeg?h=400&w=300&fit=crop&dpr=2',
