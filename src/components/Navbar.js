@@ -24,7 +24,7 @@ const Navbar = ({ logoColor, textColor, hoverTextColor, buttonBgColor, buttonTex
                 <div className='flex justify-between items-center'>
                     <button className={` ${buttonBgColor} ${buttonTextColor} items-center py-3 px-5 rounded-md font-semibold hover:opacity-80`}> Upload </button>
                     <div onClick={handleNav} className='block md:hidden'>
-                        <AiOutlineMenu className='text-white ml-2 text-xl cursor-pointer'/>
+                        <AiOutlineMenu className={`${textColor} ml-2 text-2xl cursor-pointer`} />
                     </div>
                 </div>
             </div>
