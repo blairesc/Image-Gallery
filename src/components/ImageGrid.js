@@ -7,7 +7,7 @@ const ImageGrid = ({ searchTerm }) => {
     const [isLoading, setIsLoading] = useState(true);
     
     useEffect(() => {
-        fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_KEY}&q=${searchTerm}&image_type=photo&pretty=true&per_page=100`)
+        fetch(`https://pixabay.com/api/?key=${process.env.REACT_APP_PIXABAY_KEY}&q=${searchTerm}&image_type=photo&per_page=51`)
             .then(res => res.json())
             .then(data => {
                 setImages(data.hits);
