@@ -1,15 +1,13 @@
 import React from 'react';
 import {BiHeart} from 'react-icons/bi';
 import {BiBookmarks} from 'react-icons/bi';
-import {TbDownload} from 'react-icons/tb';
-import {RiVideoFill} from 'react-icons/ri';
 
 const VideoCard = ({ video }) => {
   return (
     <div className='group relative cursor-pointer max-w-lg rounded overflow-hidden shadow-lg'>
         <div className="absolute inset-0 bg-black opacity-0 duration-500 group-hover:opacity-30"></div>
         <video width='100%' height='100%' controls>
-            <source src={video.videos.large.url} type='video/mp4' />
+            <source src={video.videos.small.url} type='video/mp4' />
             Sorry, your browser doesn't support embedded videos.
         </video>
        

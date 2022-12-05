@@ -6,7 +6,7 @@ const VideoGrid = ({ searchTerm }) => {
     const [isLoading, setIsLoading] = useState(true);
     
     useEffect(() => {
-        fetch(`https://pixabay.com/api/videos/?key=${process.env.REACT_APP_PIXABAY_KEY}&q=${searchTerm}&pretty=true&per_page=121`)
+        fetch(`https://pixabay.com/api/videos/?key=${process.env.REACT_APP_PIXABAY_KEY}&q=${searchTerm}&per_page=30`)
             .then(res => res.json())
             .then(data => {
                 setVideos(data.hits);
