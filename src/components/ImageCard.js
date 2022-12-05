@@ -1,13 +1,13 @@
-import React from 'react'
-import {BiHeart} from 'react-icons/bi'
-import {BiBookmarks} from 'react-icons/bi'
-import {TbDownload} from 'react-icons/tb'
-import { useState } from 'react'
+import React from 'react';
+import {BiHeart} from 'react-icons/bi';
+import {BiBookmarks} from 'react-icons/bi';
+import {TbDownload} from 'react-icons/tb';
 
 const ImageCard = ({ image }) => {
   return (
     <div className='group relative cursor-pointer max-w-md rounded overflow-hidden shadow-lg'>
         <img className='object-cover w-full h-full' src={image.webformatURL} alt='random image'/>
+        <div className="absolute inset-0 bg-black opacity-0 duration-500 group-hover:opacity-30"></div>
         <div className='cursor-pointer absolute top-1.5 right-0 flex invisible group-hover:visible'>
             <BiHeart className='mr-2 bg-white opacity-90 rounded-md w-7 h-7 md:w-10 md:h-10 py-px px-1.5 hover:opacity-75' />
             <BiBookmarks className='mr-2 bg-white opacity-90 rounded-md w-7 h-7 md:w-10 md:h-10 py-px px-1.5 hover:opacity-75' />
@@ -25,4 +25,4 @@ const ImageCard = ({ image }) => {
   )
 }
 
-export default ImageCard
+export default ImageCard;
