@@ -3,17 +3,17 @@ import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 
 const Navbar = ({ logoColor, textColor, hoverTextColor, buttonBgColor, buttonTextColor }) => {
     const [nav, setNav] = useState(true);
-    {/**bg-[#07a081] */}
+
     const handleNav = () => {
         setNav(!nav);
         console.log(nav);
-    }
+    };
 
     return (
         <div className={`flex justify-between items-center h-20 max-w-[1240px] mx-auto px-4 ${textColor}`}>
             <div className='flex items-center transition ease-in duration-400 hover:opacity-50'>
                 <img src='splash-logo.png' alt='Splash Logo' className='w-10 mr-4 rounded-md cursor-pointer' />
-                <h1 className={`w-full text-2xl font-bold cursor-pointer ${logoColor} hidden md:flex`}>Splash</h1>
+                <a href='/'><h1 className={`w-full text-2xl font-bold cursor-pointer ${logoColor} hidden md:flex`}>Splash</h1></a>
             </div>
             <div className='flex'>
                 <ul className='cursor-pointer items-center font-semibold hidden md:flex'>

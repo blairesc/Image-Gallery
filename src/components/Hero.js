@@ -29,10 +29,10 @@ const Hero = ({ setSearchTerm, heroTitle, heroText, searchText }) => {
         <div className='flex items-center py-4 mb-8 font-semibold'>
             <p className='text-gray-400 mr-2'>Trending: </p>
             <ul className='flex'>
-                <li className='hover:text-gray-400 mr-1 cursor-pointer'>mountains,</li>
-                <li className='hover:text-gray-400 mr-1 cursor-pointer'>wallpapers,</li>
-                <li className='hover:text-gray-400 mr-1 cursor-pointer'>happy,</li>
-                <li className='hover:text-gray-400 mr-1 cursor-pointer'>love</li>
+                <li className='mr-1'>mountains,</li>
+                <li className='mr-1'>wallpapers,</li>
+                <li className='mr-1'>happy,</li>
+                <li className='mr-1'>love</li>
             </ul>
             <FaEllipsisH className='ml-1 bg-gray-300 bg-opacity-50 rounded-full p-1 text-2xl md:text-xl cursor-pointer'/>
         </div>
