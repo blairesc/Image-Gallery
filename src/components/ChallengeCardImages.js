@@ -5,7 +5,7 @@ const ChallengeCardImages = ({ images, numOfImages }) => {
     <div>
         <div className='w-[360px] md:w-[535px] md:h-[401px] grid grid-cols-2 gap-2 cursor-pointer group'>
             <div className='relative'>
-                <img className='h-full object-cover rounded-l-3xl' src={images.img1} alt='Image One' />
+                <img className='w-full h-full object-cover rounded-l-3xl' src={images.img1} alt='Image One' />
                 <div className="absolute inset-0 bg-black opacity-0 rounded-l-3xl duration-500 group-hover:opacity-30"></div>
             </div>
 
