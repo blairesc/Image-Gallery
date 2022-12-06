@@ -6,7 +6,6 @@ const Navbar = ({ logoColor, textColor, hoverTextColor, buttonBgColor, buttonTex
 
     const handleNav = () => {
         setNav(!nav);
-        console.log(nav);
     };
 
     return (
@@ -29,7 +28,7 @@ const Navbar = ({ logoColor, textColor, hoverTextColor, buttonBgColor, buttonTex
                 </div>
             </div>
 
-            <div className={!nav ? 'fixed left-0 top-0 w-full h-full border-r bg-black ease-in-out duration-500' : 'fixed left-[-100%]'}>
+            <div className={!nav ? 'fixed left-0 top-0 w-full h-full border-r bg-black ease-in-out duration-500 z-10' : 'fixed left-[-100%]'}>
                 <div className="flex m-4">
                     <h1 className='w-full text-2xl font-bold cursor-pointer text-[#07a081]'>SPLASH</h1>
                     
