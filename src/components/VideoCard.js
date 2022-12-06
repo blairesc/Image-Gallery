@@ -6,7 +6,7 @@ const VideoCard = ({ video }) => {
   return (
     <div className='group relative cursor-pointer max-w-lg rounded overflow-hidden shadow-lg'>
         <div className="absolute inset-0 bg-black opacity-0 duration-500 group-hover:opacity-30"></div>
-        <video width='100%' height='100%' playsInline controls poster={`https://i.vimeocdn.com/video/${video.picture_id}`}>
+        <video width='100%' height='100%' playsInline autoPlay muted controls poster={`https://i.vimeocdn.com/video/${video.picture_id}`}>
             <source src={video.videos.small.url} type='video/mp4' />
             Sorry, your browser doesn't support embedded videos.
         </video>
