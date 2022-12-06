@@ -16,7 +16,7 @@ const VideoGrid = ({ searchTerm }) => {
     }, [searchTerm]);
 
     return (
-    <div className='container mx-auto mb-5 px-6 md:px-10'>
+    <div className='container mx-auto mb-5 px-6 md:px-4'>
 
         {!isLoading && videos.length === 0 && 
             <h1 className='mx-auto text-3xl text-center'> No visuals found for "<span className='italic text-slate-500'>{searchTerm}</span>"
@@ -24,7 +24,7 @@ const VideoGrid = ({ searchTerm }) => {
 
         {isLoading ? 
             <h1 className='mx-auto text-6xl text-center'>Loading...</h1> : 
-            <div className='grid grid-cols-2 lg:grid-cols-3 gap-2 md:gap-4'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-5 md:gap-4'>
                 {videos.map(video => (
                     <VideoCard key={video.id} video={video}/>
                 ))}
