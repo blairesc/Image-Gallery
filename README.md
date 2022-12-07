@@ -12,6 +12,8 @@ The Challenges page displays the current challenge as well as the past challenge
 [![Netlify Status](https://api.netlify.com/api/v1/badges/c393fd5e-299e-4c8e-a85c-5c5b162e7578/deploy-status)](https://app.netlify.com/sites/splash-gallery/deploys)
 
 ## Video Demo
+https://user-images.githubusercontent.com/59707565/206288694-1d7af803-5e1f-460c-88ff-4f54d6467757.mp4
+
 
 
 ## Live Link
