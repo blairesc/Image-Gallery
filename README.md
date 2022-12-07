@@ -1,4 +1,71 @@
-# Getting Started with Create React App
+
+# Splash
+
+This is a front end project of a gallery website for free stock images and videos.
+
+Splash has three pages namely: Home, Videos, and Challenges. The Home and <br>
+Videos pages search an input and display a grid of images and videos respectively. <br>
+The contributor's name and user image is displayed on each card when hovered. 
+
+The Challenges page displays the current challenge as well as the past challenges that are closed.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c393fd5e-299e-4c8e-a85c-5c5b162e7578/deploy-status)](https://app.netlify.com/sites/splash-gallery/deploys)
+
+## Video Demo
+
+
+## Live Link
+https://splash-gallery.netlify.app/
+
+
+## Authors
+- [@blairedesouza](https://github.com/blairesc)
+
+
+## Color Reference
+
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Accent Color| ![#07a081](https://via.placeholder.com/15/07a081/07a081.png) `#07a081`|
+
+
+
+## API Reference
+
+### Pixabay API
+
+#### Search Images
+
+```http
+  https://pixabay.com/api/?key=${key}&q=${searchTerm}&image_type=photo&per_page=${per_page}
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `key` | `string` | **Required**. API key |
+| `q` | `string` | 	A URL encoded search term. If omitted, all images are returned. This value may not exceed 100 characters. |
+| `image_type` | `string` | Filter results by image type. |
+| `per_page` | `integer` | Determine the number of results per page. |
+
+
+#### Search Videos
+```http
+  https://pixabay.com/api/videos/?key=${key}&q=${searchTerm}&per_page=${per_page}
+```
+
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `key` | `string` | **Required**. API key |
+| `q` | `string` | 	A URL encoded search term. If omitted, all videos are returned. This value may not exceed 100 characters. |
+| `per_page` | `integer` | Determine the number of results per page. |
+
+
+## Tech Stack
+
+**Client:** HTML, TailwindCSS, React
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
