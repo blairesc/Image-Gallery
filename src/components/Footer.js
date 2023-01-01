@@ -4,7 +4,7 @@ import {TfiWorld} from 'react-icons/tfi';
 const Footer = ({ bgColor, textColor }) => {
   return (
     <div className={` ${bgColor} ${textColor} flex items-center justify-center md:justify-between px-3 py-4 font-semibold`}>
-        <a href='#' className='cursor'>&copy; 2022 Splash</a>
+        <a href='#' className='cursor'>&copy; 2023 Splash</a>
         <ul className='hidden md:flex'>
             <li className='mr-4'>Terms of Use</li>
             <li className='mr-4'>Privacy Policy</li>
